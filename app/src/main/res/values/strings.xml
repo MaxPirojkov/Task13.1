@@ -7,4 +7,15 @@
     <string name="but_go">перейти</string>
     <string name="text_write_davlen">записать показания давления</string>
     <string name="text_write_life">записать жизненные показатели здоровья</string>
+
+    <string name="second_text_up">показания давления</string>
+    <string name="text_push_high">верхнее давление</string>
+    <string name="text_push_low">нижнее давление</string>
+    <string name="text_puls">пульс</string>
+    <string name="tahikar">присутствует тахикардия</string>
+    <string name="text_date_time">дата и время замера</string>
+
+    <string name="third_text_up">жизненные показатели здоровья</string>
+    <string name="text_hight">вес</string>
+    <string name="text_steps">количество шагов за сутки</string>
 </resources>
