@@ -3,7 +3,7 @@
     <string name="first_text_up">комплексная система\nмониторинга здоровья</string>
     <string name="text_fio">ФИО пациента</string>
     <string name="text_age">возраст пациента</string>
-    <string name="but_save">сохранит</string>
+    <string name="but_save">сохранить</string>
     <string name="but_go">перейти</string>
     <string name="text_write_davlen">записать показания давления</string>
     <string name="text_write_life">записать жизненные показатели здоровья</string>
