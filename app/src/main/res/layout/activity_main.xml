@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_goactivity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
@@ -18,20 +18,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_age" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_save1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="151dp"
         android:layout_marginTop="21dp"
         android:text="@string/but_save"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_age" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_goactivity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
@@ -40,7 +40,7 @@
         android:text="@string/but_go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button_goactivity2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -51,7 +51,7 @@
         android:text="@string/text_write_davlen"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button_save1" />
 
     <TextView
         android:id="@+id/textView5"
@@ -72,7 +72,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/text_age"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_fio" />
 
     <TextView
         android:id="@+id/textView"
@@ -101,7 +101,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-    android:background="@android:color/transparent"
 
     <TextView
         android:id="@+id/textView2"
@@ -114,22 +113,31 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="363dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="19dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:id="@+id/editText_fio"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_style"
+        android:ellipsize="start"
+        android:inputType="text"
+        android:paddingBottom="20dp"
+        android:textCursorDrawable="@drawable/color_cursor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="363dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="21dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:id="@+id/editText_age"
+        android:layout_width="296dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/edit_text_style"
+        android:ellipsize="start"
+        android:inputType="text"
+        android:paddingBottom="20dp"
+        android:textCursorDrawable="@drawable/color_cursor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 

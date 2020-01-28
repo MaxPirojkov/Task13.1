@@ -14,10 +14,10 @@
         android:layout_marginTop="14dp"
         android:text="@string/text_steps"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_weight" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/editText_steps"
         android:layout_width="363dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
@@ -34,7 +34,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/but_save"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_steps" />
 
     <TextView
         android:id="@+id/textView13"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editText_weight"
         android:layout_width="363dp"
         android:layout_height="42dp"
         android:layout_marginStart="24dp"
