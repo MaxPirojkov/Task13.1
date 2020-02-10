@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     private static final String TAG = "mylogs2";
@@ -29,16 +28,51 @@ public class Main2Activity extends AppCompatActivity {
         buttonSave2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String pressureUp = pushUp.getText().toString();
-                String pressureDown = pushDown.getText().toString();
-                String heartPuls = puls.getText().toString();
+                String pressureUp = pushUp.getText().toString().trim();
+                try {
+                    int NumbPressureUp = Integer.parseInt(pushUp.getText().toString().trim());
+                } catch (Exception e) {
+                    Log.e(TAG, "ошибка преобразовнаия верхнего давления");
+                }
+
+                String pressureDown = pushDown.getText().toString().trim();
+                if (pressureDown.length() > 0) {
+                    if (getPressureDown(pressureDown) != 0) {
+                    } else {
+                        Exception e;
+                    }
+                }
+
+                String heartPuls = (puls.getText().toString().trim());
+                int NumbHeartPuls = getChangeFormat(heartPuls);
+
                 String date = dateTime.getText().toString();
                 onCheckboxClicked(checkBox1);
             }
         });
 
     }
-    public void onCheckboxClicked(View view){
+
+    public int getChangeFormat(String inputString) {
+        try {
+            return Integer.parseInt(inputString);
+        } catch (NumberFormatException e) {
+            return Log.e("Ошибка ввода числа", e.toString());
+        }
+    }
+
+    private int getPressureDown(String pressureDown) {
+        try {
+            return Integer.parseInt(pressureDown);
+        } catch (Exception e) {
+            Log.e("Ошибка ввода Ндавления", e.toString());
+
+        }
+        return 0;
+
+    }
+
+    public void onCheckboxClicked(View view) {
         CheckBox checkBox1 = (CheckBox) view;
         boolean checked = checkBox1.isChecked();
         switch (view.getId()) {
@@ -47,7 +81,6 @@ public class Main2Activity extends AppCompatActivity {
                     heart = "тахикардия";
                 else
                     heart = "ok";
-
 
 
         }

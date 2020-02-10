@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,10 +21,18 @@ public class Main3Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String weight = editWeight.getText().toString();
+                getChangeFormat(weight);
                 String steps = editSteps.getText().toString();
+                getChangeFormat(steps);
             }
         });
+    }
 
-
+    public int getChangeFormat(String inputString) {
+        try {
+            return Integer.parseInt(inputString);
+        } catch (NumberFormatException e) {
+            return Log.e("Ошибка ввода числа", e.toString());
+        }
     }
 }
